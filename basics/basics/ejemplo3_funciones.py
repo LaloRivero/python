@@ -1,18 +1,18 @@
 # -*- coding:utf-8 -*-
-import turtle
+from turtle import Turtle
 
 
 def main():
-    window = turtle.Screen()
-    leonardo = turtle.Turtle()
+    window = Turtle.Screen()
+    leonardo = Turtle.turtle()
 
     make_square(leonardo)
 
-    turtle.mainloop()
+    Turtle.mainloop()
 
 
 def make_square(leonardo):
-    length = int(raw_input('Tamaño de cuadrado: '))
+    length = int(input('Tamaño de cuadrado: '))
     for i in range(4):
         make_line_and_turn(leonardo, length)
 
