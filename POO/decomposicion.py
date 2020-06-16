@@ -11,7 +11,7 @@ class Automovil:
             self._motor.inyecta_gasolina(10)
         else:
             self._motor.inyecta_gasolina(3)
-        _estado = 'en movimiento'
+        self._estado = 'en movimiento'
 
 
 class Motor:
